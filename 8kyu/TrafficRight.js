@@ -1,14 +1,18 @@
 function updateLight(current) {
-  
-    //your code here
-   if (current==='green'){
-     return 'yellow' 
-    }
-    else if(current==='yellow'){
+
+  switch (current) {
+    case 'green':
+      return 'yellow';
+      break;
+    case 'yellow':
       return 'red';
-    }
-      
-  else{ 
-    return 'green';
+      break;
+    case 'red':
+      return 'green';
+      break;
+    default:
+      return 'Undefined';
+      break;
   }
-  }
+  
+}
