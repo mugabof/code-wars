@@ -223,3 +223,6 @@ console.log(repeatedLove);
 
 const newSentence = `I ${repeatedLove} learning.`;
 console.log(newSentence);
+// Math RAndom
+let mathematics = Math.random();
+console.log(`Random number= ${mathematics}`);
