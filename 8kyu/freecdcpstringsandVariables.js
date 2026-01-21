@@ -226,3 +226,35 @@ console.log(newSentence);
 // Math RAndom
 let mathematics = Math.random();
 console.log(`Random number= ${mathematics}`);
+// All function goes with math buil in object
+console.log("Smallest number:"+ Math.min(1, 5, 3, 9)); //return smallest nbr
+console.log("Largest number:"+ Math.max(1, 5, 3, 9)); // return the largest number
+console.log("Ceiled number:"+ Math.ceil(4.3)); // 4
+console.log("Floored  number:"+ Math.floor(4.3)); // 5
+//Example
+const max = 10;
+const min = 5;
+const randomn=Math.random();
+const randomNum = Math.floor(randomn * (max - min + 1)) + min;
+console.log("First Random Number is:" + randomn)
+console.log("randomNum= :" + randomNum);
+// Random Number between 1 and 20
+const randomNumBtw1And20 = Math.floor(Math.random() * 20) + 1;
+console.log("random number between 20 and 1 "+randomNumBtw1And20);
+// Math.trunc() removes the decimal part of a number, returning only the integer portion, without rounding
+console.log("Trunced number" + Math.trunc(2.9)); // 2
+console.log("Trunced number" + Math.trunc(9.1)); // 9
+
+//If you need to get the square root or cube root of a number,use the Math.sqrt() and Math.cbrt() methods
+
+console.log("Square root of 81 is " + Math.sqrt(81)); // 9
+console.log("Cubic root of 27 is " + Math.cbrt(27));
+// Use Math.abs() method to find absolute value of a number
+
+console.log(Math.abs(-5)); // 5
+console.log(Math.abs(5)); // 5
+
+//Math.pow() takes two numbers and raise the first to the power of the second.
+
+console.log(" 100 ^ 10 ="+ Math.pow(100, 10)); // 8
+console.log(" 8 ^ 2 ="+ Math.pow(8, 2)); // 64
