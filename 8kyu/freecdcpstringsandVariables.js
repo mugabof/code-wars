@@ -232,12 +232,12 @@ console.log("Largest number:"+ Math.max(1, 5, 3, 9)); // return the largest numb
 console.log("Ceiled number:"+ Math.ceil(4.3)); // 4
 console.log("Floored  number:"+ Math.floor(4.3)); // 5
 //Example
-const max = 10;
-const min = 5;
+const maxi = 10;
+const mini = 5;
 const randomn=Math.random();
-const randomNum = Math.floor(randomn * (max - min + 1)) + min;
+const randomNum1 = Math.floor(randomn * (maxi - mini + 1)) + mini;
 console.log("First Random Number is:" + randomn)
-console.log("randomNum= :" + randomNum);
+console.log("randomNum= :" + randomNum1);
 // Random Number between 1 and 20
 const randomNumBtw1And20 = Math.floor(Math.random() * 20) + 1;
 console.log("random number between 20 and 1 "+randomNumBtw1And20);
@@ -260,9 +260,9 @@ console.log(" 100 ^ 10 ="+ Math.pow(100, 10)); // 100000000000000000000
 console.log(" 8 ^ 2 ="+ Math.pow(8, 2)); // 64
 // Exercises Build a MathBot
 const botName = "MathBot";
-const greeting = `Hi there! My name is ${botName} and I am here to teach you about the Math object!`;
+const greetingss = `Hi there! My name is ${botName} and I am here to teach you about the Math object!`;
 
-console.log(greeting);
+console.log(greetingss);
 
 console.log("The Math.random() method returns a pseudo random number greater than or equal to 0 and less than 1.");
 
@@ -308,3 +308,36 @@ console.log(maxNum);
 const minNum= Math.min(6,90,14,90,2);
 console.log(minNum);
 console.log("It was fun learning about the different Math methods with you!");
+// Build a Fortune Teller
+
+
+
+const fortune1="Your cat will look very cuddly today."
+const fortune2="The weather will be nice tomorrow."
+const fortune3="Be cautious of your new neighbours."
+const fortune4="You will find a new hobby soon."
+const fortune5="It would be wise to avoid the color red today."
+
+let randomNumber= Math.floor (Math.random() *(5-1)+1);
+let selectedFortune;
+
+  if (randomNumber === 1){
+    selectedFortune = fortune1;
+  } 
+  else if (randomNumber=== 2){
+    selectedFortune = fortune2;
+  } 
+  else if (randomNumber=== 3){
+    selectedFortune = fortune3;
+  } 
+  else if (randomNumber=== 4){
+    selectedFortune = fortune4;
+  } 
+  else if (randomNumber=== 5){
+    selectedFortune = fortune5;
+  }
+  console.log(`Random number is ${randomNumber}`);
+  console.log(selectedFortune);
+
+
+
