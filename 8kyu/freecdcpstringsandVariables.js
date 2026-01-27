@@ -339,5 +339,3 @@ let selectedFortune;
   console.log(`Random number is ${randomNumber}`);
   console.log(selectedFortune);
 
-
-
