@@ -24,5 +24,5 @@ switch(dayOfWeek){
   console.log('Last day of week, we expect a lot of fun tonight!!')
   break;
   default:
-  console.log('Excellent we no have day today')
+  console.log('Excellent we no have day today uhhhhh!!!')
 }
