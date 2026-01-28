@@ -126,3 +126,26 @@ console.log(booWhoo(1));
 console.log(booWhoo("a"));
 console.log(booWhoo("true"));
 console.log(booWhoo("false"));
+
+// *****Project of masking an email
+
+function maskEmail(email) {
+  // Find the position of the "@" symbol
+  const atIndex = email.indexOf('@');
+  
+  // Separate the username and the domain
+  const username = email.slice(0, atIndex);
+  const domain = email.slice(atIndex);
+
+  // Mask the username by keeping the first character and replacing the rest with asterisks
+  const maskedUsername = username[0] + '*'.repeat(username.length - 2) + username[username.length - 1];
+
+  // Return the masked email by combining the masked username with the domain
+  return maskedUsername + domain;
+}
+let email="mugabofranc1997@gmail.com"
+// Test cases
+console.log(maskEmail(email));  // Output: "a*******e@example.com"
+console.log(maskEmail("freecodecamp@example.com"));  // Output: "f**********p@example.com"
+console.log(maskEmail("info@test.dev"));  // Output: "i**o@test.dev"
+console.log(maskEmail("user@domain.org"));  // Output: "u**r@domain.org"
