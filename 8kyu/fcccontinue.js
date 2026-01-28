@@ -234,3 +234,35 @@ console.log(cardCounter(7));
 console.log(cardCounter(8));
 console.log(cardCounter(9));
 console.log(cardCounter("J"));
+console.log("***************************NEXT TOPIC*******************************");
+
+// Leap year Calculator
+// Function to check if a year is a leap year
+function isLeapYear(year) {
+  // Check if the year is divisible by 4
+  if (year % 4 === 0) {
+    // If the year is divisible by 100, it's not a leap year unless it's divisible by 400
+    if (year % 100 === 0) {
+      // If divisible by 400, it's a leap year
+      if (year % 400 === 0) {
+        return `${year} is a leap year.`;
+      } else {
+        return `${year} is not a leap year.`;
+      }
+    } else {
+      return `${year} is a leap year.`;
+    }
+  } else {
+    return `${year} is not a leap year.`;
+  }
+}
+
+// Declare a variable year
+let year = 1900; // Example year
+
+// Call the isLeapYear function and store the result
+let result = isLeapYear(year);
+
+// Output the result to the console
+console.log(result);
+
