@@ -111,3 +111,18 @@ function calculateSquareRoot(num) {
 
 console.log(calculateSquareRoot(25));
 console.log(calculateSquareRoot(100));
+
+//Build a Boolean check Function FCC
+
+function booWhoo(argument){
+  return typeof argument==="boolean";
+}
+console.log(booWhoo(true));
+console.log(booWhoo(false));
+console.log(booWhoo([1,2,3]));
+console.log(booWhoo([].slice));
+console.log(booWhoo({ "a": 1 }));
+console.log(booWhoo(1));
+console.log(booWhoo("a"));
+console.log(booWhoo("true"));
+console.log(booWhoo("false"));
