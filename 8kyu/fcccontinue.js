@@ -111,7 +111,7 @@ function calculateSquareRoot(num) {
 
 console.log(calculateSquareRoot(25));
 console.log(calculateSquareRoot(100));
-
+console.log("**********************************************************");           
 //Build a Boolean check Function FCC
 
 function booWhoo(argument){
@@ -126,7 +126,7 @@ console.log(booWhoo(1));
 console.log(booWhoo("a"));
 console.log(booWhoo("true"));
 console.log(booWhoo("false"));
-
+console.log("**********************************************************");
 // *****Project of masking an email
 
 function maskEmail(email) {
@@ -149,3 +149,88 @@ console.log(maskEmail(email));  // Output: "a*******e@example.com"
 console.log(maskEmail("freecodecamp@example.com"));  // Output: "f**********p@example.com"
 console.log(maskEmail("info@test.dev"));  // Output: "i**o@test.dev"
 console.log(maskEmail("user@domain.org"));  // Output: "u**r@domain.org"
+console.log(maskEmail("francois.mugabo@algorithm.rw"));
+console.log("**********************************************************");
+
+//Build a Loan Qualification Maker
+
+const minIncomeForDuplex = 60000;
+const minCreditScoreForDuplex = 700;
+
+const minIncomeForCondo = 45000;
+const minCreditScoreForCondo = 680;
+
+const minIncomeForCar = 30000;
+const minCreditScoreForCar = 650;
+
+function getLoanMessage(annualIncome, creditScore) {
+  if(creditScore >= minCreditScoreForDuplex && annualIncome >= minIncomeForDuplex) {
+    return "You qualify for a duplex, condo, and car loan."
+  } else if (annualIncome >= minIncomeForCondo && creditScore >= minCreditScoreForCondo) {
+    return "You qualify for a condo and car loan."
+  } else if (annualIncome >= minIncomeForCar && creditScore >= minCreditScoreForCar) {
+    return "You qualify for a car loan."
+  } else {
+    return "You don't qualify for any loans."
+  }
+}
+
+const duplexLoanMsg=getLoanMessage(85000, 850);
+const condoLoanMsg=getLoanMessage(65000, 690);
+const carLoanMsg=getLoanMessage(45000, 660);
+const noLoanMsg=getLoanMessage(25000, 550);
+
+console.log(duplexLoanMsg);
+console.log(condoLoanMsg);
+console.log(carLoanMsg);
+console.log(noLoanMsg);
+console.log(getLoanMessage(10000000, 700));
+console.log("***************************NEXT TOPIC*******************************");
+
+// Function that convert degree in Celsius into Fahrenheit
+function convertCtoF(celsius){
+  let fahrenheit = celsius * (9/5)+32;
+  return fahrenheit;
+}
+console.log ("In Fahrenheit is:"+ convertCtoF(30));
+
+console.log("***************************NEXT TOPIC*******************************");
+//Build a card Counting Assistant Mine
+let counti=0;
+function cardCounterr(card){
+if(card>=2 && card<=10 ){
+  return card;
+}
+else
+{
+  return `"${card}"`}
+}
+counti=3
+console.log(cardCounterr(counti))
+
+// Real One 
+let count = 0;
+const cardCounter = card => {
+  if (card >= 2 && card <= 6) {
+    count++;
+  } else if (card >=7 && card <=9) {
+    count;
+  } else if (card === 10 || card === "J" || card === "Q" || card === "K" || card === "A") {
+   count--; 
+  }
+
+  if (count > 0) {
+    return `${count} Bet`
+  } else if (count <= 0) {
+    return `${count} Hold`
+  }
+}
+console.log(cardCounter(10));
+console.log(cardCounter(3));
+console.log(cardCounter(4));
+console.log(cardCounter(5));
+console.log(cardCounter(6));
+console.log(cardCounter(7));
+console.log(cardCounter(8));
+console.log(cardCounter(9));
+console.log(cardCounter("J"));
