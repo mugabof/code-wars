@@ -284,3 +284,31 @@ console.log(truncateString("A-tisket a-tasket A green and yellow basket", "A-tis
 console.log(truncateString("A-tisket a-tasket A green and yellow basket", "A-tisket a-tasket A green and yellow basket".length + 2));
 console.log(truncateString("A-", 1));
 console.log(truncateString("Absolutely Longer", 2) );
+
+console.log("***************************NEXT TOPIC*******************************");
+//Build Confirm ending Tool
+function confirmEnding(str, target) {
+  // Get the last target.length characters from str and compare
+  return str.slice(str.length - target.length) === target;
+}
+
+console.log(confirmEnding("Congratulation", "on"));
+console.log(confirmEnding("Bastian", "n"));
+console.log(confirmEnding("Connor", "n"));
+console.log(confirmEnding("Walking on water and developing software from a specification are easy if both are frozen", "specification"));
+console.log(confirmEnding("He has to give me a new name", "name"));
+console.log(confirmEnding("Open sesame", "same"));
+console.log(confirmEnding("Open sesame", "sage"));
+console.log(confirmEnding("Open sesame", "game"));
+console.log(confirmEnding("If you want to save our world, you must hurry. We don't know how much longer we can withstand the nothing", "mountain"));
+console.log(confirmEnding("Abstraction", "action"));
+
+console.log("***************************NEXT TOPIC*******************************");
+
+
+
+
+
+console.log("***************************NEXT TOPIC*******************************");
+console.log("***************************NEXT TOPIC*******************************");
+console.log("***************************NEXT TOPIC*******************************");
