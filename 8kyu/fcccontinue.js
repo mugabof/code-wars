@@ -111,6 +111,7 @@ function calculateSquareRoot(num) {
 
 console.log(calculateSquareRoot(25));
 console.log(calculateSquareRoot(100));
+
 console.log("**********************************************************");           
 //Build a Boolean check Function FCC
 
@@ -234,6 +235,7 @@ console.log(cardCounter(7));
 console.log(cardCounter(8));
 console.log(cardCounter(9));
 console.log(cardCounter("J"));
+
 console.log("***************************NEXT TOPIC*******************************");
 
 // Leap year Calculator
@@ -304,11 +306,33 @@ console.log(confirmEnding("If you want to save our world, you must hurry. We don
 console.log(confirmEnding("Abstraction", "action"));
 
 console.log("***************************NEXT TOPIC*******************************");
+// Reverse a String 
+function reverseString(text) {
+    let reversed = "";
 
+    for (let i = text.length - 1; i >= 0; i--) {
+        reversed = reversed + text[i];
+    }
 
+    return reversed;
+}
 
+// Example usage
+let word = "CARTER MUGABO";
+let igisubizo = reverseString(word);
 
+console.log("Reversed String CARTER MUGABO:" +igisubizo);// OBAGUM RETRAC
 
 console.log("***************************NEXT TOPIC*******************************");
+// Lemme Use Reverse Function  I use Split(),Reverse(),Join();
+
+let ijambo ="My Best friend is Moise is it true?";
+let nsiplittingeIjambo=ijambo.split("");
+let reversedStringiNoneho=nsiplittingeIjambo.reverse();
+console.log("String iri Splitted ariko idahuje:  " + reversedStringiNoneho);
+
+let biveMuriArrayBibeIjamboRimwe=reversedStringiNoneho.join("");
+console.log("Noneho dore String Ifatanye:  "+ biveMuriArrayBibeIjamboRimwe);
+
 console.log("***************************NEXT TOPIC*******************************");
 console.log("***************************NEXT TOPIC*******************************");
