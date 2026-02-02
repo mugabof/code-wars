@@ -379,6 +379,7 @@ console.log(getShoppingListMsg(shoppingList));
 
 
 console.log("***************************NEXT TOPIC*******************************");
+// Build a lunch picker program
 let lunches = [];
 
 function addLunchToEnd(lunches, str) {
@@ -446,3 +447,6 @@ function showLunchMenu(lunchMenu) {
 
 //showLunchMenu([]);
 showLunchMenu(["Greens", "Corns", "Beans"]);
+console.log("***************************NEXT TOPIC*******************************");
+console.log("***************************NEXT TOPIC*******************************");
+console.log("***************************NEXT TOPIC*******************************");
