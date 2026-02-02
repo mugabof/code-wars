@@ -379,3 +379,70 @@ console.log(getShoppingListMsg(shoppingList));
 
 
 console.log("***************************NEXT TOPIC*******************************");
+let lunches = [];
+
+function addLunchToEnd(lunches, str) {
+  let newArr = lunches.push(str);
+  console.log(`${str} added to the end of the lunch menu.`);
+  return lunches;
+}
+console.log(addLunchToEnd(lunches, "Tacos"));
+console.log(addLunchToEnd(["Pizza", "Tacos"], "Burger"));
+
+
+function addLunchToStart(lunches, str) {
+  let newArr = lunches.unshift(str);
+  console.log(`${str} added to the start of the lunch menu.`);
+  return lunches;
+}
+console.log(addLunchToStart(["Burger", "Sushi"], "Pizza"));
+
+function removeLastLunch(lunches) {
+  let newArr = lunches.pop();
+  if(lunches.length === 0) {
+    console.log("No lunches to remove.")
+  }
+  else{
+  console.log(`${newArr} removed from the end of the lunch menu.`);
+  }
+  return lunches;
+}
+
+
+function removeFirstLunch(lunches) {
+  let newArr = lunches.shift();
+    if(lunches.length === 0) {
+    console.log("No lunches to remove.")
+  }
+  else{
+    console.log(`${newArr} removed from the start of the lunch menu.`);
+  }
+  return lunches;
+}
+
+
+function getRandomLunch(lunches) {
+  let randomNum = Math.floor(Math.random() * lunches.length);
+  let randomElement = lunches[randomNum];
+  
+  if(lunches.length === 0) {
+    console.log("No lunches available.")
+  }
+  else{
+    console.log(`Randomly selected lunch: ${randomElement}`);
+  }
+}
+
+
+function showLunchMenu(lunchMenu) {
+  // Check if the array is empty
+  if (lunchMenu.length === 0) {
+    console.log("The menu is empty.");
+  } else {
+    // Join the array into a string and display the menu
+    console.log("Menu items: " + lunchMenu.join(", "));
+  }
+}
+
+//showLunchMenu([]);
+showLunchMenu(["Greens", "Corns", "Beans"]);
