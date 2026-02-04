@@ -449,8 +449,29 @@ function showLunchMenu(lunchMenu) {
 showLunchMenu(["Greens", "Corns", "Beans"]);
 console.log("***************************NEXT TOPIC*******************************");
 //Build a Golf Score Translator
+const names = ["Hole-in-one!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home!"];
+function golfScore(par, stroke) {
+
+if (stroke === 1) return names[0];
+else if (stroke <= par-2) return names[1];
+else if (stroke === par-1) return names[2];
+else if (stroke === par) return names[3];
+else if (stroke === par+1) return names[4];
+else if (stroke === par+2) return names[5];
+else if (stroke >= par+3) return names[6];
+}
+
+console.log(golfScore(1, 1));
+console.log(golfScore(2, 1));
+console.log(golfScore(3, 2));
+console.log(golfScore(5, 5));
+console.log(golfScore(5, 1));
+console.log(golfScore(5, 2));
+console.log(golfScore(4, 5));
+console.log(golfScore(4, 8));
 
 console.log("***************************NEXT TOPIC*******************************");
+
 console.log("***************************NEXT TOPIC*******************************");
 console.log("***************************NEXT TOPIC*******************************");
 console.log("***************************NEXT TOPIC*******************************");
