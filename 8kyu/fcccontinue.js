@@ -509,8 +509,22 @@ const jsonStringi = '{"name":"John","age":30,"isAdmin":true}';
 const userObject = JSON.parse(jsonStringi);
 console.log(userObject);
 
-
 console.log("***************************NEXT TOPIC*******************************");
+// Object destructuring to allows you to extract values from objects and assign them to variables
+let person = { name: "Alice", age: 30, city: "New York" };
+
+let { name: personName, age: personAge } = person;
+
+console.log(personName); // Alice
+console.log(personAge); //  30
+
+let personi = { name: "Alice", age: 30, city: "New York" };
+
+let { name: personiName, age: personiAge } = personi;
+
+console.log(personName); // Alice
+console.log(personAge); //  30
+
 console.log("***************************NEXT TOPIC*******************************");
 console.log("***************************NEXT TOPIC*******************************");
 console.log("***************************NEXT TOPIC*******************************");
