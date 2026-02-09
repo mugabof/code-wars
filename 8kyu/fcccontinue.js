@@ -447,7 +447,9 @@ function showLunchMenu(lunchMenu) {
 
 //showLunchMenu([]);
 showLunchMenu(["Greens", "Corns", "Beans"]);
+
 console.log("***************************NEXT TOPIC*******************************");
+
 //Build a Golf Score Translator
 const names = ["Hole-in-one!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home!"];
 function golfScore(par, stroke) {
@@ -472,7 +474,42 @@ console.log(golfScore(4, 8));
 
 console.log("***************************NEXT TOPIC*******************************");
 
+//convert JavaScript ibject into JSON using JSON.stringfy()
+const user = {
+  name: "John",
+  age: 30,
+  isAdmin: true
+};
+
+const jsonString = JSON.stringify(user);
+console.log(jsonString);
+
+const developerObj = {
+  firstName: "Jessica",
+  isAwesome: true,
+  isMusician: true,
+  country: "USA",
+};
+
+// result: {"firstName":"Jessica","country":"USA"}
+console.log(JSON.stringify(developerObj, ["firstName", "country"]));
+
+const developerObje = {
+  firstName: "Jessica",
+  isAwesome: true,
+  isMusician: true,
+  country: "USA",
+};
+
+console.log(JSON.stringify(developerObje, null, 2));
+
 console.log("***************************NEXT TOPIC*******************************");
+//convert JSON into JS Object using JSON.parse()
+const jsonStringi = '{"name":"John","age":30,"isAdmin":true}';
+const userObject = JSON.parse(jsonStringi);
+console.log(userObject);
+
+
 console.log("***************************NEXT TOPIC*******************************");
 console.log("***************************NEXT TOPIC*******************************");
 console.log("***************************NEXT TOPIC*******************************");
