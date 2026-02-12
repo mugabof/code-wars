@@ -526,7 +526,60 @@ console.log(personName); // Alice
 console.log(personAge); //  30
 
 console.log("***************************NEXT TOPIC*******************************");
-console.log("***************************NEXT TOPIC*******************************");
+// object
+let students=[
+  {
+  fname: 'Kwizera',
+  lname: 'Carter',
+  imyaka: 20,
+  amanota: 80
+},
+{
+  fname: 'Umutesi',
+  lname: 'Alice',
+  imyaka: 28,
+  amanota: 60
+},
+{
+  fname: 'Umwali',
+  lname: 'Chantal',
+  imyaka: 21,
+  amanota: 44
+},
+{
+  fname: 'Mugabo',
+  lname: 'Francois',
+  imyaka: 30,
+  amanota: 88
+},
+{
+  fname: 'Bugingo',
+  lname: 'Emmanuel',
+  imyaka: 33,
+  amanota: 18
+},
+{
+  fname: 'Bwiza',
+  lname: 'Clementine',
+  imyaka: 18,
+  amanota: 73
+}];
+// show all students name
+students.forEach(function(student){
+  console.log(student.fname);
+});
+// show students based on condition
+
+let res= students.find(function(student){
+  return student.imyaka >21;
+});
+
+console.log(res);
+
+// Insert new record
+students.push({fname:"Mukahirwa", lname:"Delphine",amanota: 69});
+console.log(students);
+
 console.log("***************************NEXT TOPIC*******************************");
 console.log("***************************NEXT TOPIC*******************************");
 console.log("***************************NEXT TOPIC*******************************");
