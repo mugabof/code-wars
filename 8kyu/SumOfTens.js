@@ -84,3 +84,19 @@ for (let i = 0; i < 10; i++) {
   }
   console.log(i);
 }
+
+//Another thing you can do with both the break and continue statements is to use labels to specify which loop you want to break or continue.
+
+//This is useful when you have nested loops and you want to control the flow of the outer loop from within the inner loop.
+
+//Here is an example of using labels with the break statement:
+console.log("======================Another Example of using Break=============");
+
+outerLoop: for (let i = 0; i < 3; i++) {
+  innerLoop: for (let j = 0; j < 3; j++) {
+    if (i === 1 && j === 1) {
+      continue outerLoop;// u can use break to it will hat at i=1,j=1
+    }
+    console.log(`i: ${i}, j: ${j}`);
+  }
+}
