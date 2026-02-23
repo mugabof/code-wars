@@ -67,3 +67,20 @@ if (enteredPassword === correctPassword) {
 } else {
   console.log("❌ Login failed. No attempts left.");
 }
+console.log("======================Example of using Break=============");
+
+// Example of using Break inside a loop
+for (let i = 0; i < 10; i++) {
+  if (i >= 7) { //i===7
+    break;
+  }
+  console.log(i);
+}
+console.log("======================Example of using continue=============");
+// Example of using Continue inside a loop
+for (let i = 0; i < 10; i++) {
+  if (i > 5 && i<7) {// if(i===5)
+    continue;
+  }
+  console.log(i);
+}
